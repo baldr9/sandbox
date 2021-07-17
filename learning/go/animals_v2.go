@@ -218,17 +218,7 @@ func main() {
 			}
 			if cmd == "query" {
 				// The following doesn't work, why?
-				// DisplayQueryResult(animals[arg1], arg1, arg2)
-				switch a := animals[arg1].(type) {
-				case Cow:
-					DisplayQueryResult(a, arg1, arg2)
-				case Bird:
-					DisplayQueryResult(a, arg1, arg2)
-				case Snake:
-					DisplayQueryResult(a, arg1, arg2)
-				default:
-					fmt.Println("Animal has not been created: could not query " + arg1 + " to " + arg2)
-				}
+				DisplayQueryResult(animals[arg1].(Animal), arg1, arg2)
 			}
 		}
 		//for key, element := range animals {
