@@ -24,3 +24,9 @@ Had to unmount /dev/sda2 then I was able to growpart and resize2fs /dev/sda2 and
   # To install growpart utility
   sudo apt-get install -y cloud-utils
 ```
+
+Had to install 'ifconfig', it was missing from system
+```
+sudo apt install net-tools
+```
+
