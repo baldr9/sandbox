@@ -2,8 +2,8 @@
 
 ## Repositories using different github accounts
 
-* Have the work github account:
-* Have the personal github account: baldr9
+* Work github account: fabio-rojas-tfs
+* Personal github account: baldr9
 
 src: https://stackoverflow.com/questions/13103083/how-do-i-push-to-github-under-a-different-username
 
