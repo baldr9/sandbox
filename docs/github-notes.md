@@ -1,4 +1,4 @@
-# Setup ssh to use github with different users
+# Setup ssh to use github with different user accounts
 
 ## Repositories using different github accounts
 
