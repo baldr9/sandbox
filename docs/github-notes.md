@@ -16,8 +16,11 @@ Port 22
 User git
 IdentityFile ~/.ssh/github_baldr9_id_rsa
 
-Step 2:
+Step 2: update remote url referrence
 git remote set-url origin git@baldr9-github:baldr9/sandbox.git
+
+Step 3: use ssh-add to add your github credentials 
+ssh-add ~/.ssh/github_baldr9_id_rsa
 
 Step 3: verify git commands work
 git pull
