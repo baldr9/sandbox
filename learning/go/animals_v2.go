@@ -218,6 +218,9 @@ func main() {
 			}
 			if cmd == "query" {
 				// The following doesn't work, why?
+				// DisplayQueryResult(animals[arg1]interface{}, arg1, arg2)
+				// Reason: You need to convert animals[arg1] to type Animal
+				//         because function does not know what interface{} is
 				DisplayQueryResult(animals[arg1].(Animal), arg1, arg2)
 			}
 		}
