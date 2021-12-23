@@ -25,7 +25,7 @@ git push
 
 ```
 
-* Notice that ths requires you to modify the remote url which is different from the one used to clone
+* Notice that this requires you to modify the remote url which is different from the one used to clone
 * Original git clone url: `git@github.com:baldr9/sandbox.git`
 * Modified url so you use the correct ssh identity: `git@baldr9-github:baldr9/sandbox.git`
 
