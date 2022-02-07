@@ -37,3 +37,5 @@ JetBrains ToolBox lets you install different IDE tools, search for Downloads
 
 * After installing last node LTS usin nvm then make it the default `nvm alias default node; nvm alias default node`
 
+* Installed open-vm-tools following website [instructions](https://docs.vmware.com/en/VMware-Tools/11.3.0/com.vmware.vsphere.vmwaretools.doc/GUID-C48E1F14-240D-4DD1-8D4C-25B6EBE4BB0F.html)
+
