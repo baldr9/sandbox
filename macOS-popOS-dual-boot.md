@@ -4,7 +4,7 @@
 
 1. Used PopOS USB install and just installed over old macOS
 
-   - This helped setup last EFI boot partitions
+   - This helped setup larger sized EFI boot partitions
 
 2. Use macOS Catalina USB install
   
@@ -12,13 +12,13 @@
 
 3. Used PopOS to do 'Custom Install' and selected the EFI boot, 982 Linux `\`, and 33 GB Swap
 
-   - Rebooted, then used wired Ethernet to install driver for Wifi
+   - Rebooted, then used wired Ethernet to install the WiFi driver
 
    - [Ubuntu-Wifi Driver Install](https://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers)
 
    - [Ubuntu-Wifi Driver Video](https://www.youtube.com/watch?v=kRgKlcm1XPI)
 
-   - Installed rEFInd: 
+   - [Installed rEFInd](https://www.youtube.com/watch?v=kRgKlcm1XPI)
    ```
    sudo add-apt-repository ppa:rodsmith/refind && sudo apt update && sudo apt install refind && sudo refind-mkdefault
    ```
