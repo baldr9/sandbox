@@ -27,7 +27,6 @@
 ## Commands to install WiFi driver
 
 ```
-lspci
 sudo apt-get update
 sudo apt-get purge bcmwl-kernel-source
 sudo update-pciids
