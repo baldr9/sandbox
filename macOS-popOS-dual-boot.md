@@ -24,7 +24,7 @@
    ```
    - Rebooted
   
-## Commands to install Wifi driver
+## Commands to install WiFi driver
 
 ```
 lspci
