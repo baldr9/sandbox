@@ -1,4 +1,4 @@
-# Setting up PopOS
+# Setting up macOS Catalina and PopOS dual boot
 
 ## Steps
 
