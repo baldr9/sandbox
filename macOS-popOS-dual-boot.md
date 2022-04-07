@@ -32,7 +32,7 @@ sudo apt-get purge bcmwl-kernel-source
 sudo update-pciids
 lspci
 lspci -nn -d 14e4:
-# Macbook 2014 had Wifi Broadcom 14e4:43a0 rev 3
+# Macbook 2014 had WiFi Broadcom 14e4:43a0 rev 3
 sudo apt-get install bcmwl-kernel-source
 ```
 
