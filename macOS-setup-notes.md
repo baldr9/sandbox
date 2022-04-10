@@ -69,6 +69,10 @@ Notes for setting macOS Catalina development environment
 
 * [SequelPro](https://sequelpro.com/) to view database tables
 
+## Language and Tools
+
+* [Go](https://go.dev/doc/install)
+
 ~                                                                               
 ~                                                                               
 ~                                                                               
