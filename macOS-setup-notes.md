@@ -64,6 +64,10 @@ Notes for setting macOS Catalina development environment
 * `.ssh/config and keys`
 
 * [Postman](https://www.postman.com/downloads/)
+
+* [XCode 12.4 12D4e](https://xcodereleases.com/) for macOS Catalina
+
+
 ~                                                                               
 ~                                                                               
 ~                                                                               
