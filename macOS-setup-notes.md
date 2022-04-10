@@ -85,5 +85,5 @@ Notes for setting macOS Catalina development environment
 
 * [Go](https://go.dev/doc/install)
 
-  * [Setup golang environment](https://stackoverflow.com/questions/28741651/how-to-set-gopath-in-mac-os-x-10-10)
+  * [Setup Golang environment](https://stackoverflow.com/questions/28741651/how-to-set-gopath-in-mac-os-x-10-10)
 
