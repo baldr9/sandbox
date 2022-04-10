@@ -69,10 +69,15 @@ Notes for setting macOS Catalina development environment
 
 * [SequelPro](https://sequelpro.com/) to view database tables
 
+* [JetBrains IDEs](https://www.jetbrains.com/)
+
+  * GoLand, PyCharm, CLion, IntelliJ IDEA, WebStorm
+
 ## Language and Tools
 
 * [Go](https://go.dev/doc/install)
 
+  * [Setup golang environment](https://stackoverflow.com/questions/28741651/how-to-set-gopath-in-mac-os-x-10-10)
 ~                                                                               
 ~                                                                               
 ~                                                                               
