@@ -63,6 +63,7 @@ Notes for setting macOS Catalina development environment
 
 * `.ssh/config and keys`
 
+* [Postman](https://www.postman.com/downloads/)
 ~                                                                               
 ~                                                                               
 ~                                                                               
