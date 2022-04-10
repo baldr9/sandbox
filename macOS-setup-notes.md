@@ -26,6 +26,14 @@ Notes for setting macOS Catalina development environment
 
    * `ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl subl`
 
+* Inconsolata Font Family
+
+   * `brew tap homebrew/cask-fonts`
+
+   * `brew install fonttools`
+
+   * `brew install font-inconsolata`
+
 ### Graphics
 
 * [Sketch](https://www.sketch.com/updates/)
