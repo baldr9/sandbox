@@ -10,6 +10,10 @@ Notes for setting macOS Catalina development environment
 
 * Focus To-do Pomodoro from AppStore
 
+* NordVPN from AppStore
+
+* [NordPass](https://nordpass.com/download/macos/)
+
 * [Spotify](https://www.spotify.com/us/download/mac/)
 
 * [XMind 8](https://www.xmind.net/download/xmind8/)
