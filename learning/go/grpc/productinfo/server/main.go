@@ -24,6 +24,7 @@ const (
 // server is used to implement ecommerce/product_info.
 type server struct {
 	productMap map[string]*pb.Product
+	pb.UnimplementedProductInfoServer
 }
 
 // AddProduct implements ecommerce.AddProduct
