@@ -44,4 +44,11 @@ protoc --proto_path=proto --go_opt=Mproduct_info.proto=./ecommerce --go_out=serv
 
 protoc --proto_path=proto --go_opt=Mproduct_info.proto=./ecommerce --go_out=client/ --go-grpc_opt=Mproduct_info.proto=./ecommerce --go-grpc_opt=require_unimplemented_servers=false --go-grpc_out=go/client/ product_info.proto
 ```
+ A workaround for `mustEmbedUnimplementedProductInfoServer` error is to implement it in:
+ ```
+ type server struct {
+	productMap map[string]*pb.Product
+	pb.UnimplementedProductInfoServer
+}
+ ```
 
