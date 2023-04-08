@@ -50,5 +50,8 @@ protoc --proto_path=proto --go_opt=Mproduct_info.proto=./ecommerce --go_out=clie
 	productMap map[string]*pb.Product
 	pb.UnimplementedProductInfoServer
 }
- ```
+
+// We can use the following to generate the protoc files
+protoc --proto_path=proto --go_opt=Mproduct_info.proto=./ecommerce --go_out=server/ --go-grpc_opt=Mproduct_info.proto=./ecommerce --go-grpc_out=server/ product_info.proto
+```
 

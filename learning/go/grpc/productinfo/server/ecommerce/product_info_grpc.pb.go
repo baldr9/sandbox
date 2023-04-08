@@ -58,14 +58,15 @@ func (c *productInfoClient) GetProduct(ctx context.Context, in *ProductID, opts 
 }
 
 // ProductInfoServer is the server API for ProductInfo service.
-// All implementations should embed UnimplementedProductInfoServer
+// All implementations must embed UnimplementedProductInfoServer
 // for forward compatibility
 type ProductInfoServer interface {
 	AddProduct(context.Context, *Product) (*ProductID, error)
 	GetProduct(context.Context, *ProductID) (*Product, error)
+	mustEmbedUnimplementedProductInfoServer()
 }
 
-// UnimplementedProductInfoServer should be embedded to have forward compatible implementations.
+// UnimplementedProductInfoServer must be embedded to have forward compatible implementations.
 type UnimplementedProductInfoServer struct {
 }
 
@@ -75,6 +76,7 @@ func (UnimplementedProductInfoServer) AddProduct(context.Context, *Product) (*Pr
 func (UnimplementedProductInfoServer) GetProduct(context.Context, *ProductID) (*Product, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetProduct not implemented")
 }
+func (UnimplementedProductInfoServer) mustEmbedUnimplementedProductInfoServer() {}
 
 // UnsafeProductInfoServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to ProductInfoServer will
