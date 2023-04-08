@@ -11,10 +11,10 @@ import (
 	"net"
 
 	"github.com/gofrs/uuid"
-	pb "productinfo/server/ecommerce"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
+	pb "productinfo/server/ecommerce"
 )
 
 const (
@@ -28,7 +28,7 @@ type server struct {
 
 // AddProduct implements ecommerce.AddProduct
 func (s *server) AddProduct(ctx context.Context,
-							in *pb.Product) (*pb.ProductID, error) {
+	in *pb.Product) (*pb.ProductID, error) {
 	out, err := uuid.NewV4()
 	if err != nil {
 		return nil, status.Errorf(codes.Internal, "Error while generating Product ID", err)
