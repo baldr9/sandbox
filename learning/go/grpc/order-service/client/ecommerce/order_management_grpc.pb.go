@@ -162,7 +162,7 @@ func (x *orderManagementProcessOrdersClient) Recv() (*CombinedShipment, error) {
 }
 
 // OrderManagementServer is the server API for OrderManagement service.
-// All implementations should embed UnimplementedOrderManagementServer
+// All implementations must embed UnimplementedOrderManagementServer
 // for forward compatibility
 type OrderManagementServer interface {
 	AddOrder(context.Context, *Order) (*wrappers.StringValue, error)
@@ -170,9 +170,10 @@ type OrderManagementServer interface {
 	SearchOrders(*wrappers.StringValue, OrderManagement_SearchOrdersServer) error
 	UpdateOrders(OrderManagement_UpdateOrdersServer) error
 	ProcessOrders(OrderManagement_ProcessOrdersServer) error
+	mustEmbedUnimplementedOrderManagementServer()
 }
 
-// UnimplementedOrderManagementServer should be embedded to have forward compatible implementations.
+// UnimplementedOrderManagementServer must be embedded to have forward compatible implementations.
 type UnimplementedOrderManagementServer struct {
 }
 
@@ -191,6 +192,7 @@ func (UnimplementedOrderManagementServer) UpdateOrders(OrderManagement_UpdateOrd
 func (UnimplementedOrderManagementServer) ProcessOrders(OrderManagement_ProcessOrdersServer) error {
 	return status.Errorf(codes.Unimplemented, "method ProcessOrders not implemented")
 }
+func (UnimplementedOrderManagementServer) mustEmbedUnimplementedOrderManagementServer() {}
 
 // UnsafeOrderManagementServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to OrderManagementServer will
