@@ -11,17 +11,27 @@
 
 ### Install Programming languages
 
-* java 11, go 1.17, node, npm, nvm
+* java 11
 
   - `sudo apt install default-jre`
 
-* Go
+* Go 1.23.4
 
-  - 
+  - [Install Go Linux](https://go.dev/doc/install) 
+
+* Dart 3.6.0
+
+  - [Install Dart Linux](https://dart.dev/get-dart#install)
+
+  - `sudo dpkg -i dart_3.4.0-1_amd64.deb`
 
 * node, npm, nvm
 
-  - 
+  - `sudo apt install nodejs`
+
+  - [nvm install](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+
+  - [Download Node.js](https://nodejs.org/en/download/package-manager)
 
 ### Fonts
 
