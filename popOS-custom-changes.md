@@ -3,6 +3,26 @@
 
 ## Development Tools
 
+### VMWare Tools
+
+[Install VMware Tools on Ubuntu](https://www.liquidweb.com/blog/how-to-install-vmware-tools-ubuntu/)
+
+* `sudo apt-get install open-vm-tools-desktop` 
+
+### Install Programming languages
+
+* java 11, go 1.17, node, npm, nvm
+
+  - `sudo apt install default-jre`
+
+* Go
+
+  - 
+
+* node, npm, nvm
+
+  - 
+
 ### Fonts
 
 Install inconsolata
@@ -35,14 +55,7 @@ JetBrains ToolBox lets you install different IDE tools, search for Downloads
 
 ### VMware-Tools
 
-[Install VMware Tools on Ubuntu](https://www.liquidweb.com/blog/how-to-install-vmware-tools-ubuntu/)
-* `sudo apt-get install open-vm-tools-desktop` 
-
-### Install Programming languages
-
-* Installed java 11, go 1.17, node, npm, nvm
-
-### Dev Tools
+## Dev Tools
 
 * Installed sublime following website [instructions](https://www.sublimetext.com/docs/linux_repositories.html)
 
