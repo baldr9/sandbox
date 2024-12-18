@@ -23,6 +23,15 @@ JetBrains ToolBox lets you install different IDE tools, search for Downloads
 
 * Exported settings.zip from previous setups and imported them
 
+### Install FlatPak
+
+[How to Install Flatpak on Ubuntu](https://flatpak.org/setup/Ubuntu)
+
+### Chromium ARM64
+
+* Currently, Chrome is not available in ARM64 linux, so you need to install Chromium.
+
+  - `sudo apt-get install chromium-browser`
 
 ### Install Programming languages
 
