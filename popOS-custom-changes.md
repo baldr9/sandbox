@@ -33,6 +33,11 @@ JetBrains ToolBox lets you install different IDE tools, search for Downloads
 
   - `sudo apt-get install chromium-browser`
 
+### VMware-Tools
+
+[Install VMware Tools on Ubuntu](https://www.liquidweb.com/blog/how-to-install-vmware-tools-ubuntu/)
+* `sudo apt-get install open-vm-tools-desktop` 
+
 ### Install Programming languages
 
 * Installed java 11, go 1.17, node, npm, nvm
