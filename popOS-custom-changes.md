@@ -25,6 +25,12 @@
 
   - `sudo dpkg -i dart_3.4.0-1_amd64.deb`
 
+* Python2 and Python3
+
+  - `sudo apt-get install python2`
+
+  - `sudo apt-get install python3`
+
 * node, npm, nvm
 
   - `sudo apt install nodejs`
