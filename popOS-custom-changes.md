@@ -11,6 +11,9 @@ Install inconsolata
 sudo apt-get update
 sudo apt-get install fonts-inconsolata
 ```
+[Install Nerd Fonts](https://www.nerdfonts.com/)
+
+- Download `JetBrainsMono`, unzip `.ttf` to `~/.local/usr/share/fonts/` then run `fc-cache -fv`
 
 ### JetBrains ToolBox
 
