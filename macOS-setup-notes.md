@@ -85,5 +85,19 @@ Notes for setting macOS Catalina development environment
 
 * [Go](https://go.dev/doc/install)
 
+  * Used `brew install go`
   * [Setup Golang environment](https://stackoverflow.com/questions/28741651/how-to-set-gopath-in-mac-os-x-10-10)
+
+* Dart
+
+  * Used `brew install dark-sdk`
+
+* Node
+
+  * Used `brew install node`
+
+* Node
+
+  * Used `brew install nvm`
+
 
