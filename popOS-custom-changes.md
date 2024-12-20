@@ -1,7 +1,26 @@
 #  Changes to popOS default VM setup
 
-
 ## Development Tools
+
+### Dev CLI tools
+
+git, ssh, ifconfig
+
+```
+# To use ifconfig
+sudo apt-get install net-tools
+
+# To use git
+sudo apt-get install git
+
+# To use ssh
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo ufw allow ssh
+
+# Created location for git repos
+Location of git repos: `~/Documents/dev`
+```
 
 ### VMWare Tools
 
