@@ -30,9 +30,11 @@ Location of git repos: `~/Documents/dev`
 
 ### Install Programming languages
 
-* java 11
+* java 17
 
-  - `sudo apt install default-jre`
+  - java17: `sudo apt install openjdk-17-jre`
+
+  - Note: @jan2025 Ubuntu ARM64 has issues with latest: `sudo apt install default-jre`
 
 * Go 1.23.4
 
@@ -43,6 +45,12 @@ Location of git repos: `~/Documents/dev`
   - [Install Dart Linux](https://dart.dev/get-dart#install)
 
   - `sudo dpkg -i dart_3.4.0-1_amd64.deb`
+
+  - Ubuntu ARM64 deviations
+
+    - For dart-sdk get package at: `https://dart.dev/get-dart/archive`
+
+    - Note: @jan2025, the arm64 debian is not available, so install ARM64 dart-sdk zip to `/usr/local/dart-sdk` and add `/usr/local/dart-sdk/bin` to `$PATH`
 
 * Python2 and Python3
 
@@ -68,7 +76,7 @@ sudo apt-get install fonts-inconsolata
 ```
 [Install Nerd Fonts](https://www.nerdfonts.com/)
 
-- Download `JetBrainsMono`, unzip `.ttf` to `~/.local/usr/share/fonts/` then run `fc-cache -fv`
+- Download `JetBrainsMono`, unzip `.ttf` to `~/.local/share/fonts/` then run `fc-cache -fv`
 
 ### JetBrains ToolBox
 
