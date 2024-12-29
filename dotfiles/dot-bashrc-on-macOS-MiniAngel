@@ -92,15 +92,21 @@ export PATH=/opt/homebrew/bin:$PATH
 export HOMEBREWPATH=/opt/homebrew/bin
 export GOPATH=/Volumes/angeldisk/dev//baldr9-github/iot-blackbox/learn/go/go-workspace
 export GOROOT="$(brew --prefix golang)/libexec"
+export PYROOT="$(brew --prefix python)/libexec"
 export PATH=$PATH:$HOMEBREWPATH
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$PYROOT/bin
 export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
 
 # brew nvm instructions
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"                                       # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+# Rust programming env
+. "$HOME/.cargo/env"
 
 # use curl instead of wget
 # http://www.mymacosx.com/terminal/wget-replacement-macos.html
