@@ -119,3 +119,5 @@ JetBrains ToolBox lets you install different IDE tools, search for Downloads
   * @jan2025 used `ghostty_1.0.1-0.ppa1_amd64_24.10.deb`
 
   * `sudo dpkg -i ghostty_1.0.1-0.ppa1_amd64_24.10.deb`
+
+  * Until ARM64 debian is available then [build from source](https://ghostty.org/docs/install/build)
