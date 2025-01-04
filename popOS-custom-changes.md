@@ -66,6 +66,10 @@ Location of git repos: `~/Documents/dev`
 
   - [Download Node.js](https://nodejs.org/en/download/package-manager)
 
+* [rustup](https://www.rust-lang.org/tools/install)
+
+  - `rustup` toolchain
+
 ### Fonts
 
 Install inconsolata
@@ -77,6 +81,23 @@ sudo apt-get install fonts-inconsolata
 [Install Nerd Fonts](https://www.nerdfonts.com/)
 
 - Download `JetBrainsMono`, unzip `.ttf` to `~/.local/share/fonts/` then run `fc-cache -fv`
+
+[Install NeoVim from source](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+
+  - Untar release source package `tar -xzvf neovim-0.10.3.tar.gz; cd neovim-0.10.3/`
+
+  - Build nvim, it gets installed to `/usr/local/bin/nvim`
+    ```
+    make CMAKE_BUILD_TYPE=Release
+    sudo make install
+    ```
+  - ripgrep `sudo apt-get install ripgrep`
+
+  - luarocks `sudo apt-get install luarocks`
+
+    - Installed [lazyvim](https://www.lazyvim.org/)
+
+    - Copied over `.config/nvim/lua/plugins/colorscheme.lua` from previous computer
 
 ### JetBrains ToolBox
 
