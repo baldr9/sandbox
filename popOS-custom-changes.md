@@ -108,9 +108,14 @@ JetBrains ToolBox lets you install different IDE tools, search for Downloads
 
   * Created symlink `cd /usr/local/bin; sudo ln -s /usr/bin/bcompare bcomp` 
 
-* After installing last node LTS usin nvm then make it the default `nvm alias default node; nvm alias default node`
+* After installing last node LTS usin nvm then make it the default `nvm alias default node; nvm alias default 23.5.0`
 
 * Installed open-vm-tools following website [instructions](https://docs.vmware.com/en/VMware-Tools/11.3.0/com.vmware.vsphere.vmwaretools.doc/GUID-C48E1F14-240D-4DD1-8D4C-25B6EBE4BB0F.html)
 
 * Installed Docker following website [instructions](https://docs.docker.com/engine/install/ubuntu/)
 
+* [Ghostty terminal](https://github.com/mkasberg/ghostty-ubuntu/releases)
+
+  * @jan2025 used `ghostty_1.0.1-0.ppa1_amd64_24.10.deb`
+
+  * `sudo dpkg -i ghostty_1.0.1-0.ppa1_amd64_24.10.deb`
