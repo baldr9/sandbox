@@ -85,22 +85,18 @@ xterm* | rxvt* | eterm* | screen*)
 	;;
 esac
 
-# Setting up golang path
-export GOPATH=$HOME/Documents/Projects/IonTorrent/IonChef/baldr9-github/iot-blackbox/learn/go/go-workspace
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
-
-# node related
-#export PATH=/usr/local/opt/node@21/bin:$PATH
-#export LDFLAGS="-L/usr/local/opt/node@21/lib"
-#export CPPFLAGS="-I/usr/local/opt/node@21/include"
+export PATH=/opt/homebrew/bin:$PATH
+export GOPATH=$HOME/Documents/Projects/IonTorrent/IonChef/baldr9-github/iot-blackbox/learn/go/go-workspace
+export GOROOT="$(brew --prefix golang)/libexec"
+export PYROOT="$(brew --prefix python)/libexec"
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$PYROOT/bin
 
 # rust
-export PATH="/usr/local/opt/rustup/bin:$PATH"
+export PATH="$(brew --prefix rust)/bin:$PATH"
 
 # nvim
 export NVM_DIR="$HOME/.nvm"
