@@ -12,7 +12,34 @@ openjdk 21 issues.
   ```
 - [GoLand Workaround](https://youtrack.jetbrains.com/issue/JBR-8078/Bundled-JRE-crashes-on-M4-MacOS-15.2-in-virtualized-environments)
   - In `goland64.vmoptions, jetbrains_client64.vmoptions` added `-XX:UseSVE=0`
+  - VM custom location `/opt/GoLand-2024.3.1/bin/goland64.vmoptions`
 
-- Also could not run the `JetBrains ToolBox` since openjdk has issues with Ubutun 21.10
+- Also could not run the `JetBrains ToolBox` since openjdk has issues with Ubuntu 21.10
+
+
+- Follow up 2025-03-12
+
+  - [TBX-13689](https://youtrack.jetbrains.com/issue/TBX-13689) - Tried the following:
+  ```
+  # Upgrade vm
+  sudo apt-get update
+  sudo apt upgrade
+
+  # Edit grub
+  sudo nano /etc/default/grub
+
+  # Change options by adding arm64.nosve:
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash arm64.nosve"
+
+  # Save file and afterward:
+  sudo update-grub
+  ```
+## Running Toolbox
+
+- Before running Toolbox I added this command to shell `export SKIKO_RENDER_API=SOFTWARE`
+
+  - Added to the VM `.bashrc`
+
+- [JetBrains Toolbox won't start](https://askubuntu.com/questions/1357297/jetbrains-toolbox-wont-start-on-ubuntu-20-04)
 
 
