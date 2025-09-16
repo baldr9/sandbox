@@ -10,3 +10,10 @@ Created file called `.my_custom_zshrc` which in the repo is called `dot-my-custo
 
 In `.zshrc` added line: `source ~/.my_custom_zshrc`
 
+## WSL2 zsh
+
+- Installed zsh: `sudo apt install zsh` 
+
+- Changed to zsh using: `chsh -s $(which zsh)`
+
+
