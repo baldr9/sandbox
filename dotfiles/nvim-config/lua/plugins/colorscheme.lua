@@ -1,8 +1,8 @@
 return {
-  -- add gruvbox
+  -- Add the Material.nvim plugin
   { "marko-cerovac/material.nvim" },
 
-  -- Configure LazyVim to load gruvbox
+  -- Configure LazyVim to use the Material color scheme
   {
     "LazyVim/LazyVim",
     opts = {
