@@ -7,3 +7,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
+## Articles
+
+- [Finding using fzf](https://www.redhat.com/en/blog/fzf-linux-fuzzy-finder)
