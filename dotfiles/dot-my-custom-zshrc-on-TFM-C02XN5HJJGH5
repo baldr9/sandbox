@@ -18,7 +18,7 @@ export PATH=$PATH:$GOROOT/bin
 # ghostty config
 export XDG_CONFIG_HOME=$HOME/.config
 # rust
-export PATH="$(brew --prefix rust)/bin:$PATH"
+export PATH="$(brew --prefix rustup)/bin:$PATH"
 # nvim
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"                                       # This loads nvm
