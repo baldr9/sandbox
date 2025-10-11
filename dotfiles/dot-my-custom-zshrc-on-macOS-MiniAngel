@@ -28,8 +28,8 @@ export NVM_DIR="$HOME/.nvm"
 # use curl instead of wget
 # http://www.mymacosx.com/terminal/wget-replacement-macos.html
 alias wget='curl -O'
-alias sshl='ssh -oKexAlgorithms=+diffie-hellman-group1-sha1'
-alias scpl='scp -oKexAlgorithms=+diffie-hellman-group1-sha1'
+alias sshl='ssh -oHostKeyAlgorithms=ssh-rsa -o PubkeyAcceptedAlgorithms=ssh-rsa -oKexAlgorithms=+diffie-hellman-group1-sha1'
+alias scpl='scp -O -oHostKeyAlgorithms=ssh-rsa -o PubkeyAcceptedAlgorithms=ssh-rsa -oKexAlgorithms=+diffie-hellman-group1-sha1'
 alias gobit0='ssh -l rojasfe 167.116.10.250'
 alias gobyte1='ssh -l rojasfe 10.43.56.201'
 alias gomega='ssh -l rojasfe 167.116.6.92'
