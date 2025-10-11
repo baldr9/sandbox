@@ -1,0 +1,42 @@
+# ssh-agent identities
+zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_tmo github_baldr9_id_iot-blackbox github_baldr9_id_obsidian_vault github_baldr9_id_rsa
+# use 256 color xterm
+export TERM=xterm-256color
+# needed for github LFS
+export GIT_LFS_SKIP_SMUDGE=1
+export SVN_EDITOR=/usr/local/bin/nvim
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
+export EXTDEV=/Users/rojasfe/Documents/Projects/IonTorrent/IonChef
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+#export PYROOT="$(brew --prefix python)/libexec"
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+#export PATH=$PATH:$PYROOT/bin
+# ghostty config
+export XDG_CONFIG_HOME=$HOME/.config
+# rust
+export PATH="$(brew --prefix rustup)/bin:$PATH"
+# nvim
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"                                       # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# use curl instead of wget
+# http://www.mymacosx.com/terminal/wget-replacement-macos.html
+alias wget='curl -O'
+alias sshl='ssh -oHostKeyAlgorithms=ssh-rsa -o PubkeyAcceptedAlgorithms=ssh-rsa -oKexAlgorithms=+diffie-hellman-group1-sha1'
+alias scpl='scp -O -oHostKeyAlgorithms=ssh-rsa -o PubkeyAcceptedAlgorithms=ssh-rsa -oKexAlgorithms=+diffie-hellman-group1-sha1'
+alias gobit0='ssh -l rojasfe 167.116.10.250'
+alias gobyte1='ssh -l rojasfe 10.43.56.201'
+alias gomega='ssh -l rojasfe 167.116.6.92'
+alias gochef='ssh -l ionchef ionchef-builder-osxbox.local'
+alias gopur='ssh -l baldr baldr09vm.local'
+alias md5sum='md5 -r'
+alias grepo="cd $EXTDEV/baldr9-github"
+alias ghub="cd $EXTDEV/github"
+alias gmaster='git fetch -a -p;git checkout master;git pull --rebase;git status'
+alias gmain='git fetch -a -p;git checkout main;git pull --rebase;git status'
