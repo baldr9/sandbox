@@ -32,7 +32,19 @@ shell command,
 
 ## Additional Information
 
+### Make sure protobuf and proto-gen-go-grpc are installed
+
+Install protobuf: `brew install protobuf`
+
+Install `proto-gen-go-grpc`:
+```
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+```
+
 ### Generate Server and Client side code 
+Modified `.proto` to include new `go_module`, e.g.: `option go_package = "service/ecommerce";`
 ``` 
-protoc -I proto/ proto/order_management.proto --go_out =plugins=grpc:order-service-gen
+protoc -I proto/ proto/order_management.proto --go_out=. --go-grpc_out=.
 ``` 
+

@@ -32,9 +32,19 @@ shell command,
 
 ## Additional Information
 
-### Generate Server and Client side code 
-Pre-generated stub file is included in the go project. If you need to generate the stub files please use the below
- command from the root directory(inside productinfo directory)
-``` 
-protoc -I proto/ proto/product_info.proto --go_out=plugins=grpc:go/server/ecommerce
-``` 
+### Make sure protobuf and proto-gen-go-grpc are installed
+
+Install protobuf: `brew install protobuf`
+
+Install `proto-gen-go-grpc`:
+```
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+```
+
+### Generate Server and Client side code
+Modified `.proto` to include new `go_module`, e.g.: `option go_package = "server/ecommerce";`
+```
+protoc -I proto/ proto/product_info.proto --go_out=. --go-grpc_out=.
+```
+

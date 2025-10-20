@@ -4,6 +4,8 @@ import "google/protobuf/wrappers.proto";
 
 package ecommerce;
 
+option go_package = "service/ecommerce";
+
 service OrderManagement {
     rpc addOrder(Order) returns (google.protobuf.StringValue);
     rpc getOrder(google.protobuf.StringValue) returns (Order);
