@@ -2,11 +2,12 @@
 zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_tmo github_baldr9_id_iot-blackbox  github_baldr9_id_obsidian_vault github_baldr9_id_rsa
 # go env
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/iot-blackbox/learn/go/go-workspace
+export GOPATH=$HOME/go
 export PATH=$GOROOT/bin:$PATH
+export WINHOME=/mnt/c/Users/fabro
 export PATH=/opt/nvim-linux-x86_64/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
-
+export PATH=$HOME/development/flutter/bin:$PATH
 # rustup
 . "$HOME/.cargo/env"
 # fzf
