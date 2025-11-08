@@ -1,0 +1,54 @@
+# $HOME/.config/alacritty/alacritty.toml
+
+# Alacritty now uses TOML formatting for its config files.
+# This is a simple example.
+
+# There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+# It is not obvious how it translates to TOML. But it is extremely straightforward.
+
+# example: WINDOW, COLORS, etc. are tables, and should be represented as [window], [colors], respectively.
+# specifics of variables go under them. e.g.- look under "dynamic_padding" under-
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#window
+# write `dynamic_padding = true` (without backticks -`) under the table [window]
+# for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
+# This is simple. If not clear, do several trials and errors.
+
+# Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
+# I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
+# https://github.com/alacritty/alacritty/tree/master#configuration
+
+[terminal.shell]
+program = "C:\\Windows\\System32\\wsl.exe"
+args = ["-d", "Ubuntu", "--cd", "~"]
+
+[window]
+dynamic_padding = true
+startup_mode = "Windowed"
+padding.x = 10
+padding.y = 10
+decorations = "Full"
+decorations_theme_variant = "Dark" # "Light"
+
+[window.dimensions]
+columns = 135
+lines = 36
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
