@@ -29,6 +29,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Ruby env manager
+eval "$(rbenv init -)"
 # use curl instead of wget
 # http://www.mymacosx.com/terminal/wget-replacement-macos.html
 alias wget='curl -O'
