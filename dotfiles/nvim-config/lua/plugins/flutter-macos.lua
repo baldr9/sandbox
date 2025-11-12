@@ -88,11 +88,8 @@ return {
           capabilities = function(config)
             local ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
             if ok then
-              config.capabilities = vim.tbl_deep_extend(
-                "force",
-                config.capabilities or {},
-                cmp_nvim_lsp.default_capabilities()
-              )
+              config.capabilities =
+                vim.tbl_deep_extend("force", config.capabilities or {}, cmp_nvim_lsp.default_capabilities())
             end
             return config.capabilities
           end,
@@ -105,7 +102,7 @@ return {
             -- Add Android Studio SDK path to excluded folders to improve performance
             analysisExcludedFolders = {
               -- Add your Android SDK path here
-              "C:/Users/fabro/AppData/Local/Android/Sdk",
+              "/home/rojasfe/Library/Android/sdk",
               -- Flutter SDK is already excluded by default
             },
           },
@@ -125,19 +122,19 @@ return {
     end,
     keys = {
       { "<leader>Fc", "<cmd>Telescope flutter commands<cr>", desc = "Flutter Commands" },
-      { "<leader>Fd", "<cmd>FlutterDevices<cr>",             desc = "Flutter Devices" },
-      { "<leader>Fe", "<cmd>FlutterEmulators<cr>",           desc = "Flutter Emulators" },
-      { "<leader>Fr", "<cmd>FlutterRun<cr>",                 desc = "Flutter Run" },
-      { "<leader>Fq", "<cmd>FlutterQuit<cr>",                desc = "Flutter Quit" },
-      { "<leader>FR", "<cmd>FlutterReload<cr>",              desc = "Flutter Reload" },
-      { "<leader>Fs", "<cmd>FlutterRestart<cr>",             desc = "Flutter Restart" },
-      { "<leader>Fo", "<cmd>FlutterOutlineToggle<cr>",       desc = "Flutter Outline" },
-      { "<leader>Ft", "<cmd>FlutterDevTools<cr>",            desc = "Flutter DevTools" },
-      { "<leader>Fl", "<cmd>FlutterLspRestart<cr>",          desc = "Flutter LSP Restart" },
-      { "<leader>Fp", "<cmd>FlutterPubGet<cr>",              desc = "Flutter Pub Get" },
-      { "<leader>FP", "<cmd>FlutterPubUpgrade<cr>",          desc = "Flutter Pub Upgrade" },
-      { "<leader>Fv", "<cmd>FlutterVisualDebug<cr>",         desc = "Flutter Visual Debug" },
-      { "<leader>Fw", "<cmd>FlutterCopyProfilerUrl<cr>",     desc = "Copy Profiler URL" },
+      { "<leader>Fd", "<cmd>FlutterDevices<cr>", desc = "Flutter Devices" },
+      { "<leader>Fe", "<cmd>FlutterEmulators<cr>", desc = "Flutter Emulators" },
+      { "<leader>Fr", "<cmd>FlutterRun<cr>", desc = "Flutter Run" },
+      { "<leader>Fq", "<cmd>FlutterQuit<cr>", desc = "Flutter Quit" },
+      { "<leader>FR", "<cmd>FlutterReload<cr>", desc = "Flutter Reload" },
+      { "<leader>Fs", "<cmd>FlutterRestart<cr>", desc = "Flutter Restart" },
+      { "<leader>Fo", "<cmd>FlutterOutlineToggle<cr>", desc = "Flutter Outline" },
+      { "<leader>Ft", "<cmd>FlutterDevTools<cr>", desc = "Flutter DevTools" },
+      { "<leader>Fl", "<cmd>FlutterLspRestart<cr>", desc = "Flutter LSP Restart" },
+      { "<leader>Fp", "<cmd>FlutterPubGet<cr>", desc = "Flutter Pub Get" },
+      { "<leader>FP", "<cmd>FlutterPubUpgrade<cr>", desc = "Flutter Pub Upgrade" },
+      { "<leader>Fv", "<cmd>FlutterVisualDebug<cr>", desc = "Flutter Visual Debug" },
+      { "<leader>Fw", "<cmd>FlutterCopyProfilerUrl<cr>", desc = "Copy Profiler URL" },
     },
   },
 
