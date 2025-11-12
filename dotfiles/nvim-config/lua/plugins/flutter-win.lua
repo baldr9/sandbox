@@ -35,7 +35,6 @@ return {
                 flutterSdkPath = paths.flutter_sdk,
                 program = "${workspaceFolder}/lib/main.dart",
                 cwd = "${workspaceFolder}",
-
               },
               {
                 type = "dart",
@@ -116,7 +115,7 @@ return {
       require("flutter-tools").setup_project({
         {
           name = "Debug Windows",
-          device = "windows", -- Use Android device
+          device = "windows", -- Use Windows device
           flavor = nil,       -- Set your flavor if needed
           target = "lib/main.dart",
           default = true,
