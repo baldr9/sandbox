@@ -8,14 +8,26 @@ return {
 			end
 		end,
 	},
-
 	-- Configure LSP
 	{
 		"neovim/nvim-lspconfig",
 		opts = {
 			servers = {
 				dartls = {
-					-- Optional: add custom settings here
+
+					-- Optional: Add any custom settings here
+					cmd = { "dart", "language-server", "--protocol=lsp" },
+					filetypes = { "dart" },
+					init_options = {
+						closingLabels = true,
+
+						flutterOutline = true,
+						onlyAnalyzeProjectsWithOpenFiles = true,
+						outline = true,
+
+						suggestFromUnimportedLibraries = true,
+					},
+
 					settings = {
 						dart = {
 							completeFunctionCalls = true,
@@ -26,7 +38,6 @@ return {
 			},
 		},
 	},
-
 	-- Ensure mason installs dart language server
 	{
 		"mason-org/mason.nvim",
