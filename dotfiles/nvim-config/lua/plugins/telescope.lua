@@ -11,26 +11,26 @@ return {
     },
     keys = {
       -- File pickers
-      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-      { "<leader>fg", "<cmd>Telescope git_files<cr>", desc = "Find Git Files" },
-      { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent Files" },
+      { "<leader>ff", "<cmd>Telescope find_files<cr>",                desc = "Find Files" },
+      { "<leader>fg", "<cmd>Telescope git_files<cr>",                 desc = "Find Git Files" },
+      { "<leader>fr", "<cmd>Telescope oldfiles<cr>",                  desc = "Recent Files" },
       -- Search pickers
-      { "<leader>fw", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
-      { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find Buffers" },
-      { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
+      { "<leader>fw", "<cmd>Telescope live_grep<cr>",                 desc = "Live Grep" },
+      { "<leader>fb", "<cmd>Telescope buffers<cr>",                   desc = "Find Buffers" },
+      { "<leader>fh", "<cmd>Telescope help_tags<cr>",                 desc = "Help Tags" },
       -- Git pickers
-      { "<leader>gc", "<cmd>Telescope git_commits<cr>", desc = "Git Commits" },
-      { "<leader>gs", "<cmd>Telescope git_status<cr>", desc = "Git Status" },
+      { "<leader>gc", "<cmd>Telescope git_commits<cr>",               desc = "Git Commits" },
+      { "<leader>gs", "<cmd>Telescope git_status<cr>",                desc = "Git Status" },
       -- Other useful pickers
-      { "<leader>fc", "<cmd>Telescope commands<cr>", desc = "Commands" },
-      { "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
-      { "<leader>fm", "<cmd>Telescope marks<cr>", desc = "Marks" },
+      { "<leader>fc", "<cmd>Telescope commands<cr>",                  desc = "Commands" },
+      { "<leader>fk", "<cmd>Telescope keymaps<cr>",                   desc = "Keymaps" },
+      { "<leader>fm", "<cmd>Telescope marks<cr>",                     desc = "Marks" },
       -- LSP pickers (useful for code navigation)
-      { "<leader>fd", "<cmd>Telescope lsp_definitions<cr>", desc = "LSP Definitions" },
-      { "<leader>fi", "<cmd>Telescope lsp_implementations<cr>", desc = "LSP Implementations" },
-      { "<leader>ft", "<cmd>Telescope lsp_type_definitions<cr>", desc = "LSP Type Definitions" },
+      { "<leader>fd", "<cmd>Telescope lsp_definitions<cr>",           desc = "LSP Definitions" },
+      { "<leader>fi", "<cmd>Telescope lsp_implementations<cr>",       desc = "LSP Implementations" },
+      { "<leader>ft", "<cmd>Telescope lsp_type_definitions<cr>",      desc = "LSP Type Definitions" },
       -- Current buffer search
-      { "<leader>/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Search in Buffer" },
+      { "<leader>/",  "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Search in Buffer" },
     },
     config = function()
       local telescope = require("telescope")
