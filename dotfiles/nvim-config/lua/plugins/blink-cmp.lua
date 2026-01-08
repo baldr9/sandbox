@@ -1,9 +1,9 @@
 return {
   -- Disable nvim-cmp and related plugins
-  { "hrsh7th/nvim-cmp", enabled = false },
+  { "hrsh7th/nvim-cmp",     enabled = false },
   { "hrsh7th/cmp-nvim-lsp", enabled = false },
-  { "hrsh7th/cmp-buffer", enabled = false },
-  { "hrsh7th/cmp-path", enabled = false },
+  { "hrsh7th/cmp-buffer",   enabled = false },
+  { "hrsh7th/cmp-path",     enabled = false },
 
   -- Setup blink.cmp
   {
