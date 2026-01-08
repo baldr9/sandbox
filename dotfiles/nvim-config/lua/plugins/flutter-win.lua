@@ -116,7 +116,7 @@ return {
         {
           name = "Debug Windows",
           device = "windows", -- Use Windows device
-          flavor = nil,       -- Set your flavor if needed
+          flavor = nil,  -- Set your flavor if needed
           target = "lib/main.dart",
           default = true,
         },
@@ -179,9 +179,11 @@ return {
   -- LSP Configuration
   {
     "neovim/nvim-lspconfig",
+    dependencies = { "saghen/blink.cmp" },
     opts = {
       servers = {
         dartls = {
+          capabilities = require("blink.cmp").get_lsp_capabilities(),
           -- This will be handled by flutter-tools
           mason = false,
         },
