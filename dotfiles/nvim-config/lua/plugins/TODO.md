@@ -27,3 +27,17 @@
     - Add a `.markdownlint.yaml` to your root project with rules to exclude
 
     - Use `<leader>c` to view `<leader>cd` which is `line diagnostics`
+
+- [ ] Setup LazyVim `ai.copilot-native` plugin because it uses Lua LSP
+
+  - On nvim do:
+
+    - Requires nvim 11.5+, use `:LazyExtras`, click x on `ai.copilot-native`, restart nvim
+
+    - nvim use `:Copilot setup`
+
+    - nvim use `:Copilot auth`, use your `fabio-rojas-tfs` and Keeper auth to login github
+
+      - After login to GitHub using browser as `fabio-rojas-tfs`, go to `https://github.com/login/device` and enter the code that was generated when you ran `:Copilot auth`
+
+    - nvim `Copilot <cmds>` are `attach, auth, detach, disable, enable, panel, status, suggestion, toggle, version`
