@@ -1,6 +1,6 @@
 # Neovim plugin tasks
 
-- [ ] Deprecate `cmp.lua` so that we switch to using custom `blink-cmp.lua`.
+- [x] Deprecate `cmp.lua` so that we switch to using custom `blink-cmp.lua`.
 
   - Sources
 
@@ -11,3 +11,19 @@
     - [Easiest neovim autocompletion setup using blink video](https://www.youtube.com/watch?v=Q0cvzaPJJas)
 
     - [Blink auto completion plugin video](https://www.youtube.com/watch?v=GKIxgCcKAq4)
+
+- [x] Setup `marksman.lua` to do markdown linting
+
+  - On nvim do:
+
+    - `:MasonInstall marksman`
+
+    - `:MasonInstall markdownlint`
+
+    - Use LazyExtras and install `lang.markdown`
+
+    - Copy `marksman.lua` to `.config/nvim/lua/plugins`
+
+    - Add a `.markdownlint.yaml` to your root project with rules to exclude
+
+    - Use `<leader>c` to view `<leader>cd` which is `line diagnostics`
