@@ -1,6 +1,10 @@
 # Neovim plugin tasks
 
-- [x] nvim `:LazyExtras` is used to install language LSPs enabled laguages: `lang.dart, lang.go, lang.json, lang.markdown, lang.typescript, lang.docker`
+- [x] nvim `:LazyExtras` is used to install language LSPs enabled laguages:
+
+   ```
+      lang.dart, lang.go, lang.json, lang.markdown, lang.typescript, lang.docker
+   ```
 
 - [x] Deprecate `cmp.lua` so that we switch to using custom `blink-cmp.lua`.
 
