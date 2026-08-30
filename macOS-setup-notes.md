@@ -24,15 +24,15 @@ Notes for setting macOS Catalina development environment
 
 * [Sublime Text Install](https://www.sublimetext.com)
 
-   * `ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl subl`
+  * `ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl subl`
 
 * Inconsolata Font Family
 
-   * `brew tap homebrew/cask-fonts`
+  * `brew tap homebrew/cask-fonts`
 
-   * `brew install fonttools`
+  * `brew install fonttools`
 
-   * `brew install font-inconsolata`
+  * `brew install font-inconsolata`
 
 ### Graphics
 
@@ -44,12 +44,13 @@ Notes for setting macOS Catalina development environment
 
 * [HandBrake](https://handbrake.fr/)
 
-
 ## Dev Tools
 
 * [HomeBrew](https://brew.sh)
 
   * `brew install gnupg`
+
+  * `brew install coreutils`
 
 * [Beyond Compare](https://www.scootersoftware.com/download.php)
 
@@ -99,5 +100,3 @@ Notes for setting macOS Catalina development environment
 * Node
 
   * Used `brew install nvm`
-
-
